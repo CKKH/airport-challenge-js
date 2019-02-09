@@ -5,5 +5,5 @@ function Airport() {
 }
 
 Airport.prototype.hanger = () => {
-  return 'hanger'
+  return []
 }
