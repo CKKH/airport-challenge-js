@@ -1,9 +1,9 @@
 'use strict'
 
 function Airport() {
-
+  this._hanger = [];
 }
 
-Airport.prototype.hanger = () => {
-  return []
+Airport.prototype.hanger = function() {
+  return this._hanger;
 }
