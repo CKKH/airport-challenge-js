@@ -5,4 +5,11 @@ describe ('Airport', () => {
     let airport = new Airport();
     expect(airport.hanger()).toEqual([]);
   });
+
+  it("responds to .land(plane)", () => {
+    let airport = new Airport();
+    let plane = new Plane();
+    expect(airport.land(plane)).toBeDefined();
+  });
+
 });
