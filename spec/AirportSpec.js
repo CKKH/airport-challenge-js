@@ -5,4 +5,9 @@ describe ('Airport', () => {
     let airport = new Airport();
     expect(airport instanceof Airport).toBeTruthy();
   });
+
+  it("responds to .hanger", () => {
+    let airport = new Airport();
+    expect(airport.hanger()).toBeDefined();
+  });
 });
