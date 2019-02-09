@@ -8,7 +8,7 @@ describe ('Airport', () => {
 
   it("responds to .land(plane)", () => {
     let airport = new Airport();
-    let plane = new Plane();
+    let plane = jasmine.createSpy('plane')
     expect(airport.land(plane)).toBeDefined();
   });
 
